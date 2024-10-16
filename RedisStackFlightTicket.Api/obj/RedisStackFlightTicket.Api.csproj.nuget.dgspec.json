@@ -1,0 +1,347 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ismkdc/Projects/RedisStackFlightTicket/RedisStackFlightTicket.Api/RedisStackFlightTicket.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj",
+        "projectName": "Common",
+        "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj",
+        "packagesPath": "/Users/ismkdc/.nuget/packages/",
+        "outputPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ismkdc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.6.1, )"
+            },
+            "Redis.OM": {
+              "target": "Package",
+              "version": "[0.7.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/FlightSearchProvider.Mars.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/FlightSearchProvider.Mars.csproj",
+        "projectName": "FlightSearchProvider.Mars",
+        "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/FlightSearchProvider.Mars.csproj",
+        "packagesPath": "/Users/ismkdc/.nuget/packages/",
+        "outputPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ismkdc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Moon/FlightSearchProvider.Moon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Moon/FlightSearchProvider.Moon.csproj",
+        "projectName": "FlightSearchProvider.Moon",
+        "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Moon/FlightSearchProvider.Moon.csproj",
+        "packagesPath": "/Users/ismkdc/.nuget/packages/",
+        "outputPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Moon/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ismkdc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Venus/FlightSearchProvider.Venus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Venus/FlightSearchProvider.Venus.csproj",
+        "projectName": "FlightSearchProvider.Venus",
+        "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Venus/FlightSearchProvider.Venus.csproj",
+        "packagesPath": "/Users/ismkdc/.nuget/packages/",
+        "outputPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Venus/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ismkdc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ismkdc/Projects/RedisStackFlightTicket/RedisStackFlightTicket.Api/RedisStackFlightTicket.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ismkdc/Projects/RedisStackFlightTicket/RedisStackFlightTicket.Api/RedisStackFlightTicket.Api.csproj",
+        "projectName": "RedisStackFlightTicket.Api",
+        "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/RedisStackFlightTicket.Api/RedisStackFlightTicket.Api.csproj",
+        "packagesPath": "/Users/ismkdc/.nuget/packages/",
+        "outputPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/RedisStackFlightTicket.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ismkdc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/Common/Common.csproj"
+              },
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/FlightSearchProvider.Mars.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/FlightSearchProvider.Mars.csproj"
+              },
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Moon/FlightSearchProvider.Moon.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Moon/FlightSearchProvider.Moon.csproj"
+              },
+              "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Venus/FlightSearchProvider.Venus.csproj": {
+                "projectPath": "/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Venus/FlightSearchProvider.Venus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

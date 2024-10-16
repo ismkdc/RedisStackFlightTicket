@@ -1,0 +1,15 @@
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/bin/Debug/net9.0/FlightSearchProvider.Mars.deps.json
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/bin/Debug/net9.0/FlightSearchProvider.Mars.dll
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/bin/Debug/net9.0/FlightSearchProvider.Mars.pdb
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/bin/Debug/net9.0/Common.dll
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/bin/Debug/net9.0/Common.pdb
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.csproj.AssemblyReference.cache
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.AssemblyInfoInputs.cache
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.AssemblyInfo.cs
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.csproj.CoreCompileInputs.cache
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSe.8344BE17.Up2Date
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.dll
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/refint/FlightSearchProvider.Mars.dll
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/FlightSearchProvider.Mars.pdb
+/Users/ismkdc/Projects/RedisStackFlightTicket/FlightSearchProvider.Mars/obj/Debug/net9.0/ref/FlightSearchProvider.Mars.dll

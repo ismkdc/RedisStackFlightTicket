@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5BD86B61-9CFD-4090-9FF5-EA04960075A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSearchProvider.Mars", "FlightSearchProvider.Mars\FlightSearchProvider.Mars.csproj", "{35415432-0196-40B6-8E01-A33D391FEF4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlightSearchProviders", "FlightSearchProviders", "{F0AB7A0C-CCFC-486D-B2FA-7C3D97719161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSearchProvider.Venus", "FlightSearchProvider.Venus\FlightSearchProvider.Venus.csproj", "{2490E05D-F329-48F8-A92D-7988C1AC43C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSearchProvider.Moon", "FlightSearchProvider.Moon\FlightSearchProvider.Moon.csproj", "{38636B01-B561-4BE7-BAB0-32AC7E8F443B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisStackFlightTicket.Api", "RedisStackFlightTicket.Api\RedisStackFlightTicket.Api.csproj", "{428FCFD2-9006-49BA-9422-253E480DED16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BD86B61-9CFD-4090-9FF5-EA04960075A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD86B61-9CFD-4090-9FF5-EA04960075A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD86B61-9CFD-4090-9FF5-EA04960075A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD86B61-9CFD-4090-9FF5-EA04960075A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35415432-0196-40B6-8E01-A33D391FEF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35415432-0196-40B6-8E01-A33D391FEF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35415432-0196-40B6-8E01-A33D391FEF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35415432-0196-40B6-8E01-A33D391FEF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2490E05D-F329-48F8-A92D-7988C1AC43C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2490E05D-F329-48F8-A92D-7988C1AC43C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2490E05D-F329-48F8-A92D-7988C1AC43C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2490E05D-F329-48F8-A92D-7988C1AC43C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38636B01-B561-4BE7-BAB0-32AC7E8F443B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38636B01-B561-4BE7-BAB0-32AC7E8F443B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38636B01-B561-4BE7-BAB0-32AC7E8F443B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38636B01-B561-4BE7-BAB0-32AC7E8F443B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428FCFD2-9006-49BA-9422-253E480DED16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428FCFD2-9006-49BA-9422-253E480DED16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428FCFD2-9006-49BA-9422-253E480DED16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428FCFD2-9006-49BA-9422-253E480DED16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35415432-0196-40B6-8E01-A33D391FEF4F} = {F0AB7A0C-CCFC-486D-B2FA-7C3D97719161}
+		{2490E05D-F329-48F8-A92D-7988C1AC43C4} = {F0AB7A0C-CCFC-486D-B2FA-7C3D97719161}
+		{38636B01-B561-4BE7-BAB0-32AC7E8F443B} = {F0AB7A0C-CCFC-486D-B2FA-7C3D97719161}
+	EndGlobalSection
+EndGlobal

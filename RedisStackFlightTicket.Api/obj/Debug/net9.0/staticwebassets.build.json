@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "dDoaSF8IxN8Y9pRmfHLwf3S0URdmKx7LO2yAO/GTYT0=",
+  "Source": "RedisStackFlightTicket.Api",
+  "BasePath": "_content/RedisStackFlightTicket.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

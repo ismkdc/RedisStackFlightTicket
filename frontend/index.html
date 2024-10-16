@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Data Fetcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fetch Flight Data</h1>
+
+    <div class="form-group">
+        <label for="fromLocation">From:</label>
+        <input type="text" id="fromLocation" required placeholder="Enter departure location">
+    </div>
+    <div class="form-group">
+        <label for="toLocation">To:</label>
+        <input type="text" id="toLocation" required placeholder="Enter destination location">
+    </div>
+    <button id="fetchButton">Fetch Flights</button>
+
+    <table id="flightsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure Date</th>
+                <th>Return Date</th>
+                <th>Airline</th>
+                <th>Price</th>
+                <th>Cabin Class</th>
+                <th>Direct</th>
+                <th>Available Seats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fetched flight data will be appended here -->
+        </tbody>
+    </table>
+
+    <script>
+        const table = document.getElementById('flightsTable').getElementsByTagName('tbody')[0];
+
+        const getItems = () => {
+
+            clearTable();
+
+            const fromLocation = encodeURIComponent(document.getElementById('fromLocation').value.trim());
+            const toLocation = encodeURIComponent(document.getElementById('toLocation').value.trim());
+
+            // Adjust the fetch URL according to your backend
+            const url = `http://localhost:5141/FlightSearch?from=${fromLocation}&to=${toLocation}`;
+
+            fetch(url).then(async response => {
+
+                const reader = response.body?.getReader();
+                if (!reader) {
+                    return;
+                }
+                const decoder = new TextDecoder();
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    var rawItem = decoder.decode(value);
+                    var item = rawItem.replace(/\[|]/g, '').replace(/^,/, '');
+
+                    var parsedItem;
+
+                    try {
+                        parsedItem = JSON.parse(item);
+                    } catch (error) {
+                        parsedItem = JSON.parse(rawItem);
+                    }
+
+                    // Check if parsedItem is an array
+                    if (Array.isArray(parsedItem)) {
+                        // If it's an array, process each item
+                        parsedItem.forEach(item => {
+                            addRowToTable(item);
+                        });
+                    } else {
+                        // If it's a single object, process it directly
+                        addRowToTable(parsedItem);
+                    }
+                }
+                reader.releaseLock();
+            }).catch(error => {
+                console.error('Error fetching data:', error);
+            });
+        };
+
+        function clearTable() {
+            table.innerHTML = ""
+        }
+
+
+        // Function to add a row to the table
+        function addRowToTable(item) {
+            var row = document.createElement("tr");
+
+            var idCell = document.createElement("td");
+            var fromCell = document.createElement("td");
+            var toCell = document.createElement("td");
+            var departureDateCell = document.createElement("td");
+            var returnDateCell = document.createElement("td");
+            var airlineCell = document.createElement("td");
+            var priceCell = document.createElement("td");
+            var cabinClassCell = document.createElement("td");
+            var directCell = document.createElement("td");
+            var availableSeatsCell = document.createElement("td");
+
+            idCell.innerHTML = item.id;
+            fromCell.innerHTML = item.from;
+            toCell.innerHTML = item.to;
+            departureDateCell.innerHTML = new Date(item.departureDate).toLocaleString();
+            returnDateCell.innerHTML = new Date(item.returnDate).toLocaleString();
+            airlineCell.innerHTML = item.airline;
+            priceCell.innerHTML = `$${item.price.toFixed(2)}`;
+            cabinClassCell.innerHTML = item.cabinClass;
+            directCell.innerHTML = item.isDirect ? 'Yes' : 'No';
+            availableSeatsCell.innerHTML = item.availableSeats;
+
+            row.appendChild(idCell);
+            row.appendChild(fromCell);
+            row.appendChild(toCell);
+            row.appendChild(departureDateCell);
+            row.appendChild(returnDateCell);
+            row.appendChild(airlineCell);
+            row.appendChild(priceCell);
+            row.appendChild(cabinClassCell);
+            row.appendChild(directCell);
+            row.appendChild(availableSeatsCell);
+            table.appendChild(row);
+        }
+
+        document.getElementById('fetchButton').addEventListener('click', getItems);
+    </script>
+
+</body>
+
+</html>
